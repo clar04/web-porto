@@ -6,25 +6,25 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: "Analisis Penjualan E-commerce",
-      description: "Dashboard interaktif untuk menganalisis trend penjualan dan customer behavior menggunakan Python dan Tableau",
-      tech: ["Python", "Pandas", "Tableau", "SQL"],
-      image: "https://via.placeholder.com/400x250/3B82F6/FFFFFF?text=Sales+Dashboard",
-      link: "#"
+      title: "Sistem Rekomendasi Properti Real-time untuk Kota Melbourne",
+      description: "Dashboard interaktif untuk menganalisis tren penjualan dan perilaku pelanggan menggunakan Python dan Tableau.",
+      tech: ["Python", "Apache Kafka", "Minio", "Dovker"],
+      image: "./images/project1.png",
+      link: "https://github.com/clar04/fp-bigdata"
+    },   
+    {
+      title: "Klasifikasi Emosi",
+      description: "Proyek ini berfokus pada klasifikasi emosi dari ulasan pelanggan menggunakan berbagai model deep learning. Tujuannya adalah untuk menganalisis data tekstual dan mengkategorikannya ke dalam keadaan emosi yang telah ditentukan, yang dapat membantu bisnis memahami sentimen pelanggan dan meningkatkan layanan.",
+      tech: ["Python", "Pandas", "Tensorflow", "Sastrawi", "scikit-learn"],
+      image: "./images/project2.png",
+      link: "https://github.com/clar04/Emotion-Classification"
     },
     {
-      title: "Prediksi Churn Customer",
-      description: "Model machine learning untuk memprediksi customer churn dengan akurasi 85% menggunakan Random Forest",
-      tech: ["Python", "Scikit-learn", "Matplotlib", "Seaborn"],
-      image: "https://via.placeholder.com/400x250/10B981/FFFFFF?text=ML+Model",
-      link: "#"
-    },
-    {
-      title: "ETL Pipeline Automation",
-      description: "Automated data pipeline untuk mengolah data dari multiple sources ke data warehouse",
-      tech: ["Python", "Apache Airflow", "PostgreSQL", "Docker"],
-      image: "https://via.placeholder.com/400x250/8B5CF6/FFFFFF?text=ETL+Pipeline",
-      link: "#"
+      title: "Biomedical Cancer Publication Classifier",
+      description: "Proyek ini bertujuan untuk mengklasifikasikan publikasi teks biomedis ke dalam jenis kanker spesifik menggunakan teknik machine learning berbasis Apache Spark (PySpark) dan pustaka Python.",
+      tech: ["Python", "PySpark", "pandas", "tensorflow"],
+      image: "https://storage.googleapis.com/kaggle-datasets-images/2389764/4033428/79458858452843a140f9ca9a94deff5e/dataset-cover.jpg?t=2022-08-06-02-32-08",
+      link: "https://github.com/clar04/cancer-classification"
     }
   ];
 
@@ -190,7 +190,7 @@ const Portfolio = () => {
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">Get In Touch</h2>
-            <p className="text-xl text-gray-300">Let's discuss your data analysis needs</p>
+            {/* <p className="text-xl text-gray-300">Let's discuss your data analysis needs</p> */}
           </div>
 
           <div className="flex justify-center">
