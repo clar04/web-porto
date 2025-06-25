@@ -113,8 +113,7 @@ const Portfolio = () => {
                 <p className="text-gray-300 leading-relaxed mb-6">
   I’m a data enthusiast passionate about turning raw data into actionable insights. 
   Proficient in Python, SQL, and Excel, I work across the full data lifecycle—from cleaning 
-  and analysis to visualization and reporting.<br />
-  I combine analytical thinking with practical tools to uncover trends, solve problems, and 
+  and analysis to visualization and reporting.I combine analytical thinking with practical tools to uncover trends, solve problems, and 
   tell compelling data stories. Currently, I’m focused on sharpening my skills in analysis, 
   automation, and visualization to support data-driven decisions across domains.
 </p>
