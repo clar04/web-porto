@@ -87,7 +87,7 @@ const Portfolio = () => {
                   <img
           src="./images/photo.png"
           alt="Profile"
-          className="w-full h-full rounded-full object-cover"
+          className="w-full h-full rounded-full object-cover transition-transform duration-300 hover:scale-110"
         />
                   </div>
                 </div>
