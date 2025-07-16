@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, Linkedin, Github, ExternalLink, Database, BarChart3, Brain, Code, User, Briefcase, MessageSquare } from 'lucide-react';
+import { Mail, Phone, Linkedin, Github, ExternalLink, Database, BarChart3, Brain, Code, User, Briefcase, MessageSquare, FileText} from 'lucide-react';
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState('about');
@@ -55,6 +55,7 @@ const Portfolio = () => {
               {[
                 { id: 'about', label: 'About Me', icon: <User className="w-4 h-4" /> },
                 { id: 'projects', label: 'Projects', icon: <Briefcase className="w-4 h-4" /> },
+                { id: 'cv', label: 'My CV', icon: <FileText className="w-4 h-4" /> },
                 { id: 'contact', label: 'Contact', icon: <MessageSquare className="w-4 h-4" /> }
               ].map((item) => (
                 <button
@@ -178,6 +179,34 @@ const Portfolio = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+                {/* CV Section */}
+      <section id="cv" className="py-20">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">My Curriculum Vitae</h2>
+            <p className="text-xl text-gray-300">View or download my professional CV</p>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 text-center">
+              <h3 className="text-2xl font-semibold text-white mb-4">Download My CV</h3>
+              <p className="text-gray-300 leading-relaxed mb-6">
+                Click the button below to view or download my latest curriculum vitae in PDF format.
+              </p>
+              <a
+                href="./cv/CV_ATS_Clara.pdf" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition-colors duration-300"
+              >
+                <FileText className="w-5 h-5" />
+                <span>View/Download CV</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
