@@ -410,7 +410,7 @@ const Portfolio = () => {
               leadership roles.
             </p>
             <a
-              href="./cv/CV_ATS___Clara.pdf"
+              href="./cv/CV_287.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-3 px-8 py-4 bg-purple-700 text-white font-bold rounded-full shadow-lg hover:bg-purple-800 transition-all duration-300 transform hover:scale-105"
