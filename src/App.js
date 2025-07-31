@@ -140,6 +140,11 @@ const Portfolio = () => {
                 icon: <Database className="w-5 h-5" />,
               },
               {
+                id: "certifications",
+                label: "Certifications",
+                icon: <Briefcase className="w-5 h-5" />,
+              },
+              {
                 id: "cv",
                 label: "My CV",
                 icon: <FileText className="w-5 h-5" />,
@@ -384,6 +389,28 @@ const Portfolio = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications Section */}                                      
+      <section id="certifications" className="py-20 px-6">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-white mb-6">Certifications</h2>
+          <p className="text-xl text-gray-300 mb-10">
+            Here are some certifications I’ve achieved to deepen my knowledge in data and software development.
+          </p>
+
+          <div className="flex flex-col items-center space-y-4">
+            <a
+              href="https://www.freecodecamp.org/certification/clar04/data-analysis-with-python-v7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-3 px-6 py-4 bg-purple-700 text-white font-medium rounded-full shadow-md hover:bg-purple-800 transition-all duration-300 transform hover:scale-105"
+            >
+              <ExternalLink className="w-5 h-5" />
+              <span>Data Analysis with Python - freeCodeCamp</span>
+            </a>
           </div>
         </div>
       </section>
