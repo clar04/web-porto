@@ -88,7 +88,7 @@ const Portfolio = () => {
         "Autoprefixer",
         "ESLint"
       ],
-      "image": "./images/web-porto3.png", 
+      "image": "./images/web-porto3.png",
       "link": "https://github.com/clar04/test-seal"
     }];
 
@@ -117,9 +117,9 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 font-sans text-white">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-black/40 backdrop-blur-md z-50 border-b border-white/10 shadow-lg">
+      <nav className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-md z-50 border-b border-purple-500/20 shadow-2xl">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-3xl font-extrabold text-white tracking-wide">
+          <h1 className="text-3xl font-extrabold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent tracking-wide">
             Clara's Profile
           </h1>
           <div className="hidden md:flex space-x-6">
@@ -159,8 +159,8 @@ const Portfolio = () => {
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
                 className={`flex items-center space-x-2 px-5 py-2 rounded-full transition-all duration-300 transform hover:scale-105 ${activeSection === item.id
-                    ? "bg-purple-700 text-white shadow-lg"
-                    : "text-gray-300 hover:text-white hover:bg-white/15"
+                  ? "bg-gradient-to-r from-purple-600 to-cyan-600 text-white shadow-lg"
+                  : "text-gray-300 hover:text-white hover:bg-purple-600/20 hover:shadow-md"
                   }`}
               >
                 {item.icon}
@@ -179,23 +179,23 @@ const Portfolio = () => {
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-6xl font-extrabold text-white mb-6 leading-tight">
             Hi, I'm{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-cyan-400 to-pink-400">
               Clara Valentina
             </span>
           </h2>
           <p className="text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
             A passionate{" "}
-            <span className="font-semibold text-purple-300">
+            <span className="font-semibold text-cyan-300">
               Data Enthusiast
             </span>{" "}
             and aspiring{" "}
-            <span className="font-semibold text-pink-300">Web Developer</span>,
+            <span className="font-semibold text-purple-300">Web Developer</span>,
             dedicated to transforming ideas into impactful digital solutions.
           </p>
 
           {/* Profile Picture */}
           <div className="flex justify-center mb-16">
-            <div className="relative p-2 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full shadow-2xl">
+            <div className="relative p-2 bg-gradient-to-br from-purple-500 via-cyan-500 to-pink-500 rounded-full shadow-2xl">
               <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-slate-900">
                 <img
                   src="./images/foto-profil.jpg"
@@ -203,15 +203,15 @@ const Portfolio = () => {
                   className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
                 />
               </div>
-              <div className="absolute bottom-4 right-4 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full p-4 shadow-xl">
+              <div className="absolute bottom-4 right-4 bg-gradient-to-br from-cyan-600 to-purple-600 rounded-full p-4 shadow-xl">
                 <BarChart3 className="w-8 h-8 text-white animate-bounce" />
               </div>
             </div>
           </div>
 
           {/* About Content */}
-          <div className="max-w-4xl mx-auto bg-white/5 backdrop-blur-lg rounded-3xl p-10 border border-white/15 shadow-xl">
-            <h3 className="text-3xl font-bold text-white mb-6">About Me</h3>
+          <div className="max-w-4xl mx-auto bg-slate-800/50 backdrop-blur-lg rounded-3xl p-10 border border-purple-500/20 shadow-2xl">
+            <h3 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-6">About Me</h3>
             <p className="text-lg text-gray-300 leading-relaxed mb-8">
               I'm a data enthusiast passionate about turning raw data into
               actionable insights, and I also find great joy in crafting
@@ -227,16 +227,16 @@ const Portfolio = () => {
 
             {/* Data Skills */}
             <div className="mb-10">
-              <h4 className="text-2xl font-bold text-white mb-4">
+              <h4 className="text-2xl font-bold text-cyan-300 mb-4">
                 Data Skills
               </h4>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
                 {dataSkills.map((skill, index) => (
                   <div
                     key={index}
-                    className="bg-white/10 rounded-xl p-5 border border-white/10 flex flex-col items-center justify-center space-y-3 hover:bg-purple-800/20 transition-all duration-300 transform hover:scale-105 shadow-md"
+                    className="bg-slate-700/30 rounded-xl p-5 border border-cyan-500/20 flex flex-col items-center justify-center space-y-3 hover:bg-cyan-600/20 hover:border-cyan-400/40 transition-all duration-300 transform hover:scale-105 shadow-md"
                   >
-                    <div className="text-purple-400">{skill.icon}</div>
+                    <div className="text-cyan-400">{skill.icon}</div>
                     <span className="text-white font-semibold text-base">
                       {skill.name}
                     </span>
@@ -247,14 +247,14 @@ const Portfolio = () => {
 
             {/* Web Skills */}
             <div>
-              <h4 className="text-2xl font-bold text-white mb-4">
+              <h4 className="text-2xl font-bold text-purple-300 mb-4">
                 Web Dev Skills
               </h4>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
                 {webSkills.map((skill, index) => (
                   <div
                     key={index}
-                    className="bg-white/10 rounded-xl p-5 border border-white/10 flex flex-col items-center justify-center space-y-3 hover:bg-purple-800/20 transition-all duration-300 transform hover:scale-105 shadow-md"
+                    className="bg-slate-700/30 rounded-xl p-5 border border-purple-500/20 flex flex-col items-center justify-center space-y-3 hover:bg-purple-600/20 hover:border-purple-400/40 transition-all duration-300 transform hover:scale-105 shadow-md"
                   >
                     <div className="text-purple-400">{skill.icon}</div>
                     <span className="text-white font-semibold text-base">
@@ -269,10 +269,10 @@ const Portfolio = () => {
       </section>
 
       {/* Web Development Projects Section */}
-      <section id="web-projects" className="py-20 bg-black/30 px-6">
+      <section id="web-projects" className="py-20 bg-slate-900/30 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-4">
               Web Development Projects
             </h2>
             <p className="text-xl text-gray-300">
@@ -285,7 +285,7 @@ const Portfolio = () => {
             {webProjects.map((project, index) => (
               <div
                 key={index}
-                className="group bg-white/10 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/15 hover:border-purple-500 transition-all duration-500 hover:shadow-2xl hover:translate-y-[-5px]"
+                className="group bg-slate-800/40 backdrop-blur-lg rounded-2xl overflow-hidden border border-purple-500/20 hover:border-purple-400 hover:shadow-purple-500/25 transition-all duration-500 hover:shadow-2xl hover:translate-y-[-5px]"
               >
                 <div className="relative overflow-hidden">
                   <img
@@ -293,7 +293,7 @@ const Portfolio = () => {
                     alt={project.title}
                     className="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
                 </div>
 
                 <div className="p-7">
@@ -308,7 +308,7 @@ const Portfolio = () => {
                     {project.tech.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-4 py-1 bg-blue-600/30 text-blue-300 rounded-full text-xs font-medium border border-blue-500/30"
+                        className="px-4 py-1 bg-purple-600/30 text-purple-300 rounded-full text-xs font-medium border border-purple-500/40"
                       >
                         {tech}
                       </span>
@@ -319,7 +319,7 @@ const Portfolio = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors font-medium"
+                    className="inline-flex items-center space-x-2 text-purple-400 hover:text-purple-300 transition-colors font-medium"
                   >
                     <span>View Project</span>
                     <ExternalLink className="w-4 h-4" />
@@ -335,7 +335,7 @@ const Portfolio = () => {
       <section id="data-projects" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent mb-4">
               Data Projects
             </h2>
             <p className="text-xl text-gray-300">
@@ -347,7 +347,7 @@ const Portfolio = () => {
             {dataProjects.map((project, index) => (
               <div
                 key={index}
-                className="group bg-white/10 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/15 hover:border-pink-500 transition-all duration-500 hover:shadow-2xl hover:translate-y-[-5px]"
+                className="group bg-slate-800/40 backdrop-blur-lg rounded-2xl overflow-hidden border border-cyan-500/20 hover:border-cyan-400 hover:shadow-cyan-500/25 transition-all duration-500 hover:shadow-2xl hover:translate-y-[-5px]"
               >
                 <div className="relative overflow-hidden">
                   <img
@@ -355,7 +355,7 @@ const Portfolio = () => {
                     alt={project.title}
                     className="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
                 </div>
 
                 <div className="p-7">
@@ -370,7 +370,7 @@ const Portfolio = () => {
                     {project.tech.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-4 py-1 bg-pink-600/30 text-pink-300 rounded-full text-xs font-medium border border-pink-500/30"
+                        className="px-4 py-1 bg-cyan-600/30 text-cyan-300 rounded-full text-xs font-medium border border-cyan-500/40"
                       >
                         {tech}
                       </span>
@@ -381,7 +381,7 @@ const Portfolio = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center space-x-2 text-pink-400 hover:text-pink-300 transition-colors font-medium"
+                    className="inline-flex items-center space-x-2 text-cyan-400 hover:text-cyan-300 transition-colors font-medium"
                   >
                     <span>View Project</span>
                     <ExternalLink className="w-4 h-4" />
@@ -393,12 +393,12 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Certifications Section */}                                      
-      <section id="certifications" className="py-20 px-6">
+      {/* Certifications Section */}
+      <section id="certifications" className="py-20 bg-slate-900/30 px-6">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Certifications</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-6">Certifications</h2>
           <p className="text-xl text-gray-300 mb-10">
-            Here are some certifications I’ve achieved to deepen my knowledge in data and software development.
+            Here are some certifications I've achieved to deepen my knowledge in data and software development.
           </p>
 
           <div className="flex flex-col items-center space-y-4">
@@ -406,7 +406,7 @@ const Portfolio = () => {
               href="https://www.freecodecamp.org/certification/clar04/data-analysis-with-python-v7"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-3 px-6 py-4 bg-purple-700 text-white font-medium rounded-full shadow-md hover:bg-purple-800 transition-all duration-300 transform hover:scale-105"
+              className="inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 text-white font-medium rounded-full shadow-lg hover:from-purple-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105"
             >
               <ExternalLink className="w-5 h-5" />
               <span>Data Analysis with Python - freeCodeCamp</span>
@@ -416,9 +416,9 @@ const Portfolio = () => {
       </section>
 
       {/* CV Section */}
-      <section id="cv" className="py-20 bg-black/30 px-6">
+      <section id="cv" className="py-20 px-6">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent mb-6">
             My Curriculum Vitae
           </h2>
           <p className="text-xl text-gray-300 mb-10">
@@ -426,7 +426,7 @@ const Portfolio = () => {
             experience.
           </p>
 
-          <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-10 border border-white/15 shadow-xl flex flex-col items-center">
+          <div className="bg-slate-800/50 backdrop-blur-lg rounded-3xl p-10 border border-purple-500/20 shadow-2xl flex flex-col items-center">
             <h3 className="text-3xl font-semibold text-white mb-5">
               Download My CV
             </h3>
@@ -440,7 +440,7 @@ const Portfolio = () => {
               href="./cv/CV_317.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-3 px-8 py-4 bg-purple-700 text-white font-bold rounded-full shadow-lg hover:bg-purple-800 transition-all duration-300 transform hover:scale-105"
+              className="inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 text-white font-bold rounded-full shadow-lg hover:from-purple-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105"
             >
               <FileText className="w-6 h-6" />
               <span>View/Download CV</span>
@@ -450,11 +450,11 @@ const Portfolio = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6">
+      <section id="contact" className="py-20 bg-slate-900/30 px-6">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-16">Get In Touch</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-16">Get In Touch</h2>
 
-          <div className="w-full bg-white/5 backdrop-blur-lg rounded-3xl p-10 border border-white/15 shadow-xl">
+          <div className="w-full bg-slate-800/50 backdrop-blur-lg rounded-3xl p-10 border border-purple-500/20 shadow-2xl">
             <h3 className="text-3xl font-semibold text-white mb-10 text-center">
               Contact Information
             </h3>
@@ -462,13 +462,13 @@ const Portfolio = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <a
                 href="mailto:claravalentina004@gmail.com"
-                className="flex items-center space-x-6 bg-white/10 p-6 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:bg-purple-800/20 group shadow-md"
+                className="flex items-center space-x-6 bg-slate-700/30 p-6 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:bg-purple-600/20 hover:border-purple-400/40 group shadow-md border border-purple-500/20"
               >
-                <div className="bg-purple-600 p-4 rounded-full group-hover:bg-purple-500 transition-colors shadow-lg">
+                <div className="bg-gradient-to-br from-purple-600 to-cyan-600 p-4 rounded-full group-hover:from-purple-500 group-hover:to-cyan-500 transition-all shadow-lg">
                   <Mail className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-left">
-                  <p className="text-gray-300 text-sm">Email</p>
+                  <p className="text-gray-400 text-sm">Email</p>
                   <p className="text-white font-medium text-lg break-words group-hover:text-purple-300 transition-colors">
                     claravalentina004@gmail.com
                   </p>
@@ -479,14 +479,14 @@ const Portfolio = () => {
                 href="https://wa.me/+62895410768812"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-6 bg-white/10 p-6 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:bg-purple-800/20 group shadow-md"
+                className="flex items-center space-x-6 bg-slate-700/30 p-6 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:bg-cyan-600/20 hover:border-cyan-400/40 group shadow-md border border-cyan-500/20"
               >
-                <div className="bg-purple-600 p-4 rounded-full group-hover:bg-purple-500 transition-colors shadow-lg">
+                <div className="bg-gradient-to-br from-cyan-600 to-purple-600 p-4 rounded-full group-hover:from-cyan-500 group-hover:to-purple-500 transition-all shadow-lg">
                   <Phone className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-left">
-                  <p className="text-gray-300 text-sm">Phone</p>
-                  <p className="text-white font-medium text-lg group-hover:text-purple-300 transition-colors">
+                  <p className="text-gray-400 text-sm">Phone</p>
+                  <p className="text-white font-medium text-lg group-hover:text-cyan-300 transition-colors">
                     +62 8954-1076-8812
                   </p>
                 </div>
@@ -496,13 +496,13 @@ const Portfolio = () => {
                 href="https://linkedin.com/in/claravalentina004"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-6 bg-white/10 p-6 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:bg-purple-800/20 group shadow-md"
+                className="flex items-center space-x-6 bg-slate-700/30 p-6 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:bg-purple-600/20 hover:border-purple-400/40 group shadow-md border border-purple-500/20"
               >
-                <div className="bg-purple-600 p-4 rounded-full group-hover:bg-purple-500 transition-colors shadow-lg">
+                <div className="bg-gradient-to-br from-purple-600 to-cyan-600 p-4 rounded-full group-hover:from-purple-500 group-hover:to-cyan-500 transition-all shadow-lg">
                   <Linkedin className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-left">
-                  <p className="text-gray-300 text-sm">LinkedIn</p>
+                  <p className="text-gray-400 text-sm">LinkedIn</p>
                   <p className="text-white font-medium text-lg break-words group-hover:text-purple-300 transition-colors">
                     linkedin.com/in/claravalentina004
                   </p>
@@ -513,14 +513,14 @@ const Portfolio = () => {
                 href="https://github.com/clar04"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-6 bg-white/10 p-6 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:bg-purple-800/20 group shadow-md"
+                className="flex items-center space-x-6 bg-slate-700/30 p-6 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:bg-cyan-600/20 hover:border-cyan-400/40 group shadow-md border border-cyan-500/20"
               >
-                <div className="bg-purple-600 p-4 rounded-full group-hover:bg-purple-500 transition-colors shadow-lg">
+                <div className="bg-gradient-to-br from-cyan-600 to-purple-600 p-4 rounded-full group-hover:from-cyan-500 group-hover:to-purple-500 transition-all shadow-lg">
                   <Github className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-left">
-                  <p className="text-gray-300 text-sm">GitHub</p>
-                  <p className="text-white font-medium text-lg group-hover:text-purple-300 transition-colors">
+                  <p className="text-gray-400 text-sm">GitHub</p>
+                  <p className="text-white font-medium text-lg group-hover:text-cyan-300 transition-colors">
                     github.com/clar04
                   </p>
                 </div>
@@ -531,12 +531,12 @@ const Portfolio = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black/50 backdrop-blur-md border-t border-white/10 py-8">
+      <footer className="bg-slate-900/80 backdrop-blur-md border-t border-purple-500/20 py-8">
         <div className="max-w-7xl mx-auto px-6 text-center text-gray-400">
           <p className="mb-2">© 2025 Clara's Profile. All rights reserved.</p>
           <p>
             Built with <span className="text-purple-400">React</span> &{" "}
-            <span className="text-blue-400">Tailwind CSS</span>
+            <span className="text-cyan-400">Tailwind CSS</span>
           </p>
         </div>
       </footer>
