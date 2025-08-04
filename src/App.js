@@ -49,6 +49,15 @@ const Portfolio = () => {
         "https://storage.googleapis.com/kaggle-datasets-images/2389764/4033428/79458858452843a140f9ca9a94deff5e/dataset-cover.jpg?t=2022-08-06-02-32-08",
       link: "https://github.com/clar04/cancer-classification",
     },
+    {
+      title: "Customer Segmentation using Clustering",
+      description:
+        "Proyek ini membangun pipeline analisis data untuk melakukan segmentasi nasabah berdasarkan data demografis dan ekonomi. Proses mencakup EDA, encoding, normalisasi, reduksi dimensi dengan PCA, serta pengelompokan menggunakan KMeans dan evaluasi dengan Silhouette Coefficient.",
+      tech: ["Python", "pandas", "scikit-learn", "matplotlib", "seaborn", "feature-engine"],
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/K-means_convergence.gif/800px-K-means_convergence.gif",
+      link: "https://github.com/clar04/analisis-klasifikasi-nasabah",
+    },
   ];
 
   const webProjects = [
@@ -228,7 +237,7 @@ const Portfolio = () => {
             {/* Data Skills */}
             <div className="mb-10">
               <h4 className="text-2xl font-bold text-cyan-300 mb-4">
-                Data Skills
+                AI / Data Skills
               </h4>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
                 {dataSkills.map((skill, index) => (
@@ -331,12 +340,12 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Data Projects Section */}
+      {/* AI / Data Projects Section */}
       <section id="data-projects" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent mb-4">
-              Data Projects
+              AI / Data Projects
             </h2>
             <p className="text-xl text-gray-300">
               Dive into my data analysis and machine learning endeavors
