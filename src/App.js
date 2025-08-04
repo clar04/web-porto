@@ -25,17 +25,17 @@ const Portfolio = () => {
 
   const dataProjects = [
     {
-      title: "Sistem Rekomendasi Properti Real-time untuk Kota Melbourne",
+      title: "Real-time Property Recommendation System for Melbourne City",
       description:
-        "Dikembangkan sistem rekomendasi properti real-time untuk Melbourne. Fitur termasuk dashboard interaktif menggunakan Python untuk menganalisis tren penjualan dan perilaku pelanggan. Integrasi Kafka dan MinIO untuk streaming dan penyimpanan data, semua dideploy via Docker.",
+        "Developed a real-time property recommendation system for Melbourne. Features include an interactive dashboard built with Python to analyze sales trends and customer behavior. Integrated Kafka and MinIO for data streaming and storage, all deployed using Docker.",
       tech: ["Python", "Apache Kafka", "Minio", "Docker"],
       image: "./images/project1.png",
       link: "https://github.com/clar04/fp-bigdata",
     },
     {
-      title: "Klasifikasi Emosi Ulasan Pelanggan",
+      title: "Customer Review Emotion Classification",
       description:
-        "Mengimplementasikan klasifikasi emosi untuk ulasan pelanggan menggunakan berbagai model deep learning. Tujuan proyek ini adalah memproses dan menganalisis data tekstual untuk mengkategorikan emosi, membantu pemahaman sentimen pelanggan.",
+        "Implemented emotion classification for customer reviews using various deep learning models. The goal of this project is to process and analyze textual data to categorize emotions, aiding in understanding customer sentiment.",
       tech: ["Python", "Pandas", "Tensorflow", "Sastrawi", "scikit-learn"],
       image: "./images/project2.png",
       link: "https://github.com/clar04/Emotion-Classification",
@@ -43,7 +43,7 @@ const Portfolio = () => {
     {
       title: "Biomedical Cancer Publication Classifier",
       description:
-        "Membangun pipeline machine learning untuk mengklasifikasikan publikasi teks biomedis ke dalam jenis kanker spesifik. Proyek ini memanfaatkan Apache Spark (PySpark) untuk pemrosesan data skala besar serta teknik NLP dan model TensorFlow.",
+        "Built a machine learning pipeline to classify biomedical text publications into specific cancer types. This project utilizes Apache Spark (PySpark) for large-scale data processing, along with NLP techniques and TensorFlow models.",
       tech: ["Python", "PySpark", "pandas", "tensorflow"],
       image:
         "https://storage.googleapis.com/kaggle-datasets-images/2389764/4033428/79458858452843a140f9ca9a94deff5e/dataset-cover.jpg?t=2022-08-06-02-32-08",
@@ -52,13 +52,13 @@ const Portfolio = () => {
     {
       title: "Customer Segmentation using Clustering",
       description:
-        "Proyek ini membangun pipeline analisis data untuk melakukan segmentasi nasabah berdasarkan data demografis dan ekonomi. Proses mencakup EDA, encoding, normalisasi, reduksi dimensi dengan PCA, serta pengelompokan menggunakan KMeans dan evaluasi dengan Silhouette Coefficient.",
+        "This project builds a data analysis pipeline to segment customers based on demographic and economic data. The process includes EDA, encoding, normalization, dimensionality reduction with PCA, clustering using KMeans, and evaluation with Silhouette Coefficient.",
       tech: ["Python", "pandas", "scikit-learn", "matplotlib", "seaborn", "feature-engine"],
-      image:
-        "./images/project4.png",
+      image: "./images/project4.png",
       link: "https://github.com/clar04/analisis-klasifikasi-nasabah",
     },
   ];
+
 
   const webProjects = [
     {
@@ -102,7 +102,7 @@ const Portfolio = () => {
     },
     {
       "title": "Books Explorer Library",
-      "description": "Proyek ini adalah aplikasi web responsif yang dibangun dengan ReactJS untuk memungkinkan pengguna menjelajahi dan mencari buku. Aplikasi ini terintegrasi dengan Google Books API dan Open Library API untuk menampilkan detail buku, ulasan (implementasi tiruan), dan data tambahan seperti subjek. Fitur-fitur utama termasuk pencarian buku yang di-debounce, pagination untuk memuat lebih banyak buku, dan desain responsif yang dibangun dengan Tailwind CSS. Proyek ini juga mencakup penanganan status API, halaman detail buku, dan halaman 404.",
+      "description": "This project is a responsive web application built with ReactJS that allows users to explore and search for books. The app integrates with the Google Books API and Open Library API to display book details, mock reviews, and additional data such as subjects. Key features include debounced book search, pagination to load more books, and a responsive design built with Tailwind CSS. The project also includes API status handling, a book detail page, and a custom 404 page.",
       "tech": [
         "ReactJS",
         "Tailwind CSS",
@@ -114,6 +114,7 @@ const Portfolio = () => {
       "image": "./images/web-porto4.png",
       "link": "https://books-explorer-library.vercel.app/"
     }
+
   ];
 
   const dataSkills = [
