@@ -99,7 +99,22 @@ const Portfolio = () => {
       ],
       "image": "./images/web-porto3.png",
       "link": "https://github.com/clar04/test-seal"
-    }];
+    },
+    {
+      "title": "Books Explorer Library",
+      "description": "Proyek ini adalah aplikasi web responsif yang dibangun dengan ReactJS untuk memungkinkan pengguna menjelajahi dan mencari buku. Aplikasi ini terintegrasi dengan Google Books API dan Open Library API untuk menampilkan detail buku, ulasan (implementasi tiruan), dan data tambahan seperti subjek. Fitur-fitur utama termasuk pencarian buku yang di-debounce, pagination untuk memuat lebih banyak buku, dan desain responsif yang dibangun dengan Tailwind CSS. Proyek ini juga mencakup penanganan status API, halaman detail buku, dan halaman 404.",
+      "tech": [
+        "ReactJS",
+        "Tailwind CSS",
+        "React Router",
+        "axios",
+        "Google Books API",
+        "OpenLibrary API"
+      ],
+      "image": "./images/web-porto4.png",
+      "link": "https://books-explorer-library.vercel.app/"
+    }
+  ];
 
   const dataSkills = [
     { name: "Apache Spark", icon: <Database className="w-6 h-6" /> },
