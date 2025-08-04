@@ -55,7 +55,7 @@ const Portfolio = () => {
         "Proyek ini membangun pipeline analisis data untuk melakukan segmentasi nasabah berdasarkan data demografis dan ekonomi. Proses mencakup EDA, encoding, normalisasi, reduksi dimensi dengan PCA, serta pengelompokan menggunakan KMeans dan evaluasi dengan Silhouette Coefficient.",
       tech: ["Python", "pandas", "scikit-learn", "matplotlib", "seaborn", "feature-engine"],
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/K-means_convergence.gif/800px-K-means_convergence.gif",
+        "./images/project4.png",
       link: "https://github.com/clar04/analisis-klasifikasi-nasabah",
     },
   ];
